@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const pizzaSchema = mongoose.Schema({
+const PizzaSchema = mongoose.Schema({
     name: {
         type: 'string',
         required: true,
@@ -21,5 +21,5 @@ const pizzaSchema = mongoose.Schema({
     }
 }, { timestamps: true });
 
-const pizzaModel =  mongoose.model('Pizza',pizzaSchema);
-module.exports = pizzaModel;
+const PizzaModel = mongoose.model('Pizza', PizzaSchema);
+module.exports = PizzaModel;

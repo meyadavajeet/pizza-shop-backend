@@ -20,12 +20,13 @@ app.use(morgan("dev"));
 
 
 //route
+app.use("/api/pizzas",require("./routes/PizzaRoute"));
 app.get('/',(req,res)=>{
     res.send('<h1>Hello from node server from nodemon</h1>');
-})
+});
 
 
 const port = process.env.PORT || 8080;
 app.listen(port, () => {
 console.log(`server running on ${process.env.NODE_ENV}`.bgGreen.white);
-})
+});
