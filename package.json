@@ -1,5 +1,5 @@
 {
-  "name": "com.technicalajeet",
+  "name": "com.ajcoder",
   "version": "1.0.0",
   "description": "Backend for the pizza shop application with the help of mongodb and nodejs ",
   "main": "server.js",
